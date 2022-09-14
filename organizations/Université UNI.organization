@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Université UNI">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="Duchemin">
+      <firstName>Alexandre</firstName>
+      <lastName>Duchemin</lastName>
+      <title>Mr</title>
+      <jobTitle>Recruteur</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Dubois">
+      <firstName>Frank</firstName>
+      <lastName>Dubois</lastName>
+      <title>Mr</title>
+      <jobTitle>Intervieweur</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Recruteur">
+      <displayName>Recruteur</displayName>
+    </role>
+    <role name="Intervieweur">
+      <displayName>Intervieweur</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Service recrutement">
+      <displayName>Service recrutement</displayName>
+    </group>
+    <group name="Unité de traitement des candidatures" parentPath="/Service recrutement">
+      <displayName>Unité de traitement des candidatures</displayName>
+    </group>
+    <group name="Unité chargée des entretiens" parentPath="/Service recrutement">
+      <displayName>Unité chargée des entretiens</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>Duchemin</userName>
+      <roleName>Recruteur</roleName>
+      <groupName>Unité de traitement des candidatures</groupName>
+      <groupParentPath>/Service recrutement</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Dubois</userName>
+      <roleName>Intervieweur</roleName>
+      <groupName>Unité chargée des entretiens</groupName>
+      <groupParentPath>/Service recrutement</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
