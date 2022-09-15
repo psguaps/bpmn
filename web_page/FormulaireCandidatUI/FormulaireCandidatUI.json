@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "FormulaireCandidatUI",
   "name" : "FormulaireCandidatUI",
-  "lastUpdate" : 1663237540582,
+  "lastUpdate" : 1663238189036,
   "rows" : [
     [
       {
@@ -144,7 +144,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Informations candidat"
+                          "value" : "Informations candidat :"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -511,7 +511,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Emploi visé"
+                          "value" : "Emploi visé :"
                         },
                         "alignment" : {
                           "type" : "constant",
