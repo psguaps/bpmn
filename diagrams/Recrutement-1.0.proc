@@ -212,8 +212,13 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_YzalvDTJEe2f0YxNpRV2hQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_cURNkDTaEe2K_f9wm4D59Q" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_eezyhzTaEe2K_f9wm4D59Q" name="initRecruteurFormulaireCandidat()" content="def formulaireCandidatVar = new com.company.model.FormulaireCandidat()&#xD;&#xA;formulaireCandidatVar.nom = recruteurFormulaireCandidatInput?.nom&#xD;&#xA;formulaireCandidatVar.prenom = recruteurFormulaireCandidatInput?.prenom&#xD;&#xA;formulaireCandidatVar.mail = recruteurFormulaireCandidatInput?.mail&#xD;&#xA;formulaireCandidatVar.formation = recruteurFormulaireCandidatInput?.formation&#xD;&#xA;formulaireCandidatVar.categorieEmploi = recruteurFormulaireCandidatInput?.categorieEmploi&#xD;&#xA;formulaireCandidatVar.refEmploi = recruteurFormulaireCandidatInput?.refEmploi&#xD;&#xA;return formulaireCandidatVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.FormulaireCandidat">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_eezyiDTaEe2K_f9wm4D59Q" name="recruteurFormulaireCandidatInput" type="COMPLEX"/>
+        </defaultValue>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_o8ipnzTCEe2f0YxNpRV2hQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_o8ipoDTCEe2f0YxNpRV2hQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_o8ipoDTCEe2f0YxNpRV2hQ" name="FormulaireCandidatUI" content="edebadc1-c510-4644-bae0-29cb00fa9a6f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_o8ipoTTCEe2f0YxNpRV2hQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_o8ipojTCEe2f0YxNpRV2hQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -296,7 +301,16 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_THs4sDTMEe2f0YxNpRV2hQ" documentation="Recruteur" name="Alexander Duchemin" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_YV9GQDTMEe2f0YxNpRV2hQ" documentation="Intervieweur" name="Frank Dubois"/>
-      <contract xmi:type="process:Contract" xmi:id="_o8ipozTCEe2f0YxNpRV2hQ"/>
+      <contract xmi:type="process:Contract" xmi:id="_o8ipozTCEe2f0YxNpRV2hQ">
+        <inputs xmi:type="process:ContractInput" xmi:id="_eezygDTaEe2K_f9wm4D59Q" name="recruteurFormulaireCandidatInput" type="COMPLEX" dataReference="recruteurFormulaireCandidat">
+          <inputs xmi:type="process:ContractInput" xmi:id="_eezygTTaEe2K_f9wm4D59Q" name="nom"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_eezygjTaEe2K_f9wm4D59Q" name="prenom"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_eezygzTaEe2K_f9wm4D59Q" name="mail"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_eezyhDTaEe2K_f9wm4D59Q" name="formation"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_eezyhTTaEe2K_f9wm4D59Q" name="categorieEmploi"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_eezyhjTaEe2K_f9wm4D59Q" name="refEmploi"/>
+        </inputs>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_o8ipkDTCEe2f0YxNpRV2hQ">
         <name xmi:type="expression:Expression" xmi:id="_o8ipkTTCEe2f0YxNpRV2hQ" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_o8ipkjTCEe2f0YxNpRV2hQ" content="" returnTypeFixed="true"/>
