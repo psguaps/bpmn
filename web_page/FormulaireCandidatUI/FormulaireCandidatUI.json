@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "FormulaireCandidatUI",
   "name" : "FormulaireCandidatUI",
-  "lastUpdate" : 1663234670285,
+  "lastUpdate" : 1663238189036,
   "rows" : [
     [
       {
@@ -57,7 +57,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Recruteur Formulaire Candidat"
+                    "value" : "Formulaire candidat"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -108,10 +108,62 @@
                     {
                       "type" : "component",
                       "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
                         "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Informations candidat :"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "cb34b7c4-f76d-4d96-9000-5a64cdc3a83e",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -159,23 +211,39 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "a3b17d48-f90a-474a-a707-eecbb5abcd15",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
-                    }
-                  ],
-                  [
+                    },
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -223,7 +291,25 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "2309c5cc-cbc3-4adc-8ef5-0caec98bf796",
@@ -287,7 +373,25 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "736040cc-fe97-495f-b7b2-91783e8713c9",
@@ -300,33 +404,29 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 6
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
+                        "disabled" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : false
                         },
-                        "cssClasses" : {
+                        "required" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : true
                         },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -334,104 +434,170 @@
                           "type" : "interpolation",
                           "value" : "Formation"
                         },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
                         "placeholder" : {
                           "type" : "constant"
                         },
-                        "type" : {
+                        "availableValues" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : [
+                            "BAC",
+                            "BAC+2",
+                            "BAC+3",
+                            "BAC+5",
+                            "BAC+8"
+                          ]
                         },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
                         },
                         "value" : {
                           "type" : "variable",
                           "value" : "formInput.recruteurFormulaireCandidatInput.formation"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
                         }
                       },
-                      "reference" : "07813057-3c1b-466c-b3cf-26c5e50eb3a9",
+                      "reference" : "ddc2dac3-6652-43d5-9409-abe2e05fb2ce",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbSelect"
                     }
                   ],
                   [
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
                         },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Emploi visé :"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "a4a467b4-8765-4a7c-8c1c-012f0eae5c68",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 6,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "labelWidth" : {
+                        "hidden" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         },
-                        "readOnly" : {
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Categorie Emploi"
+                          "value" : "Catégorie emploi"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
                         },
                         "placeholder" : {
                           "type" : "constant"
                         },
-                        "type" : {
+                        "availableValues" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : [
+                            "Catégorie A",
+                            "Catégorie B",
+                            "Catégorie C"
+                          ]
                         },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
                         },
                         "value" : {
                           "type" : "variable",
                           "value" : "formInput.recruteurFormulaireCandidatInput.categorieEmploi"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
                         }
                       },
-                      "reference" : "4cf19942-c997-4055-80d3-cbfac0b4397d",
+                      "reference" : "ad8097d4-2676-426d-b499-a7ff6d2b31c7",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
-                  [
+                      "id" : "pbSelect"
+                    },
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -460,7 +626,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Ref Emploi"
+                          "value" : "Référence emploi"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -479,13 +645,90 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "5e0befc3-c2d5-4fcb-a1d3-cafbbccb9699",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Charger CV"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : "../API/formFileUpload"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : ""
+                        },
+                        "errorContent" : {
+                          "type" : "variable",
+                          "value" : ""
+                        }
+                      },
+                      "reference" : "235bee2c-6884-44e1-903c-448ce89b9686",
+                      "hasValidationError" : false,
+                      "id" : "pbUpload"
                     }
                   ]
                 ]
