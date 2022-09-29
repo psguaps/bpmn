@@ -416,9 +416,22 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_YzaluDTJEe2f0YxNpRV2hQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_YzaltzTJEe2f0YxNpRV2hQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_YzalujTJEe2f0YxNpRV2hQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_wj3mUDTNEe2f0YxNpRV2hQ" name="newForm" content="372dc822-f48d-4deb-9395-a51935157d68" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_wj3mUDTNEe2f0YxNpRV2hQ" name="RapportRecrutementUI" content="edebadc1-c510-4644-bae0-29cb00fa9a6f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_YzaluTTJEe2f0YxNpRV2hQ"/>
+          <contract xmi:type="process:Contract" xmi:id="_YzaluTTJEe2f0YxNpRV2hQ">
+            <inputs xmi:type="process:ContractInput" xmi:id="_poe1ID_cEe220bZ_LKAeBQ" name="initinterviewerFormulaireDecisionInput" type="COMPLEX" dataReference="initinterviewerFormulaireDecision" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_poe1IT_cEe220bZ_LKAeBQ" name="nom" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_poe1Ij_cEe220bZ_LKAeBQ" name="prenom" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_poe1Iz_cEe220bZ_LKAeBQ" name="mail" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_poe1JD_cEe220bZ_LKAeBQ" name="formation" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_poe1JT_cEe220bZ_LKAeBQ" name="nomRecr" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_poe1Jj_cEe220bZ_LKAeBQ" name="prenomRecr" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_poe1Jz_cEe220bZ_LKAeBQ" name="dateEnt" type="OFFSETDATETIME" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_poe1KD_cEe220bZ_LKAeBQ" name="decision" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_poe1KT_cEe220bZ_LKAeBQ" name="commentaire" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_poe1Kj_cEe220bZ_LKAeBQ" name="salaire" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_YzalvDTJEe2f0YxNpRV2hQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_IbqAMDThEe22JPiQloNnuA" name="Informer le candidat de la date d'entretien" outgoing="_cA51YDTJEe2f0YxNpRV2hQ" incoming="_SfCaYDTFEe2f0YxNpRV2hQ">
@@ -679,8 +692,11 @@
           <referencedElements xmi:type="process:ContractInput" xmi:id="_eezyiDTaEe2K_f9wm4D59Q" name="recruteurFormulaireCandidatInput" type="COMPLEX"/>
         </defaultValue>
       </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_jPi9ID_cEe220bZ_LKAeBQ" name="initinterviewerFormulaireDecision" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireDecision">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_jPi9IT_cEe220bZ_LKAeBQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_o8ipnzTCEe2f0YxNpRV2hQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_o8ipoDTCEe2f0YxNpRV2hQ" name="FormulaireCandidatUI" content="edebadc1-c510-4644-bae0-29cb00fa9a6f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_o8ipoDTCEe2f0YxNpRV2hQ" name="RapportRecrutementUI" content="edebadc1-c510-4644-bae0-29cb00fa9a6f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_o8ipoTTCEe2f0YxNpRV2hQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_o8ipojTCEe2f0YxNpRV2hQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -772,7 +788,15 @@
           <inputs xmi:type="process:ContractInput" xmi:id="_eezyhTTaEe2K_f9wm4D59Q" name="categorieEmploi"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_eezyhjTaEe2K_f9wm4D59Q" name="refEmploi"/>
         </inputs>
+        <inputs xmi:type="process:ContractInput" xmi:id="_5ZR-8D_dEe220bZ_LKAeBQ" name="cv" type="FILE">
+          <mapping xmi:type="process:ContractInputMapping" xmi:id="_5ZR-8T_dEe220bZ_LKAeBQ"/>
+        </inputs>
       </contract>
+      <documents xmi:type="process:Document" xmi:id="_8rqVsD_dEe220bZ_LKAeBQ" name="mycv" documentType="CONTRACT" contractInput="_5ZR-8D_dEe220bZ_LKAeBQ">
+        <mimeType xmi:type="expression:Expression" xmi:id="_8rqVsT_dEe220bZ_LKAeBQ" name="" content="" returnTypeFixed="true"/>
+        <url xmi:type="expression:Expression" xmi:id="_8rqVsj_dEe220bZ_LKAeBQ" name="" content="" returnTypeFixed="true"/>
+        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_8rqVsz_dEe220bZ_LKAeBQ" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
+      </documents>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_o8ipkDTCEe2f0YxNpRV2hQ">
         <name xmi:type="expression:Expression" xmi:id="_o8ipkTTCEe2f0YxNpRV2hQ" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_o8ipkjTCEe2f0YxNpRV2hQ" content="" returnTypeFixed="true"/>
@@ -918,7 +942,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_YzalvTTJEe2f0YxNpRV2hQ" type="3005" element="_YzalsDTJEe2f0YxNpRV2hQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_YzalvzTJEe2f0YxNpRV2hQ" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YzalvjTJEe2f0YxNpRV2hQ" x="558" y="163" width="148" height="74"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YzalvjTJEe2f0YxNpRV2hQ" x="542" y="163" width="148" height="74"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_IbtDhDThEe22JPiQloNnuA" type="3027" element="_IbqAMDThEe22JPiQloNnuA" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_IbtDhjThEe22JPiQloNnuA" type="5017"/>
