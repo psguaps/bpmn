@@ -376,22 +376,27 @@
                 <expression xmi:type="expression:Expression" xmi:id="__5xb9UCXEe20qNWOTTbDaA" name="/c" content="/c" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="__5xb9kCXEe20qNWOTTbDaA" key="script">
-                <expression xmi:type="expression:Expression" xmi:id="__5xb90CXEe20qNWOTTbDaA" name="&lt;pattern-expression>" content="python C:\Users\Luka\OneDrive - IMT MINES ALES\Documents\Documents\Cours\IMT Alès\S9\BPMN\Projet\PDF\testPDF.py ${recruteurFormulaireCandidat.nom} ${recruteurFormulaireCandidat.prenom} ${recruteurFormulaireCandidat.mail}" type="TYPE_PATTERN" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_vczEcECdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat.nom" content="recruteurFormulaireCandidat.nom" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_vczEcUCdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vczEckCdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
+                <expression xmi:type="expression:Expression" xmi:id="__5xb90CXEe20qNWOTTbDaA" name="&lt;pattern-expression>" content="python C:\Users\Luka\OneDrive - IMT MINES ALES\Documents\Documents\Cours\IMT Alès\S9\BPMN\Projet\PDF\testPDF.py ${recruteurFormulaireCandidat.nom} ${recruteurFormulaireCandidat.prenom} ${FormulaireDecision.mail}  ${FormulaireDecision.formation} ${FormulaireDecision.nomInt} ${FormulaireDecision.prenomInt} ${FormulaireDecision.dateEnt} ${FormulaireDecision.decision} ${FormulaireDecision.commentaire} ${FormulaireDecision.salaire} ${FormulaireDecision.numRap} ${FormulaireDecision.categorie}" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_DkhD0ECiEe20qNWOTTbDaA" name="recruteurFormulaireCandidat.nom" content="recruteurFormulaireCandidat.nom" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_DkhD0UCiEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DkhD0kCiEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
                     </referencedElements>
                   </referencedElements>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_vczEc0CdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat.prenom" content="recruteurFormulaireCandidat.prenom" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_vczEdECdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vczEdUCdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_DkhD00CiEe20qNWOTTbDaA" name="recruteurFormulaireCandidat.prenom" content="recruteurFormulaireCandidat.prenom" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_DkhD1ECiEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DkhD1UCiEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
                     </referencedElements>
                   </referencedElements>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_vczrgECdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat.mail" content="recruteurFormulaireCandidat.mail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_vczrgUCdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vczrgkCdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
-                    </referencedElements>
-                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_DkhD1kCiEe20qNWOTTbDaA" name="FormulaireDecision.mail" content="FormulaireDecision.mail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_DkhD10CiEe20qNWOTTbDaA" name="FormulaireDecision.formation" content="FormulaireDecision.formation" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_DkhD2ECiEe20qNWOTTbDaA" name="FormulaireDecision.nomInt" content="FormulaireDecision.nomInt" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_DkhD2UCiEe20qNWOTTbDaA" name="FormulaireDecision.prenomInt" content="FormulaireDecision.prenomInt" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_DkhD2kCiEe20qNWOTTbDaA" name="FormulaireDecision.dateEnt" content="FormulaireDecision.dateEnt" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_DkhD20CiEe20qNWOTTbDaA" name="FormulaireDecision.decision" content="FormulaireDecision.decision" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_DkhD3ECiEe20qNWOTTbDaA" name="FormulaireDecision.commentaire" content="FormulaireDecision.commentaire" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_Dkhq4ECiEe20qNWOTTbDaA" name="FormulaireDecision.salaire" content="FormulaireDecision.salaire" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_Dkhq4UCiEe20qNWOTTbDaA" name="FormulaireDecision.numRap" content="FormulaireDecision.numRap" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_Dkhq4kCiEe20qNWOTTbDaA" name="FormulaireDecision.categorie" content="FormulaireDecision.categorie" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
                 </expression>
               </parameters>
             </configuration>
