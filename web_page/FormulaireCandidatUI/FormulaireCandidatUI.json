@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "FormulaireCandidatUI",
   "name" : "FormulaireCandidatUI",
-  "lastUpdate" : 1664446888260,
+  "lastUpdate" : 1664522821194,
   "rows" : [
     [
       {
@@ -575,7 +575,8 @@
                           "value" : [
                             "Catégorie A",
                             "Catégorie B",
-                            "Catégorie C"
+                            "Catégorie C",
+                            "Catégorie D"
                           ]
                         },
                         "displayedKey" : {
