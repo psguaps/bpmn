@@ -367,22 +367,47 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_CvwMIjTHEe2f0YxNpRV2hQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_CvwMITTHEe2f0YxNpRV2hQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_CvwMIzTHEe2f0YxNpRV2hQ" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_Tc5-ED_MEe28rJIX-e75Dg" name="Script Rapport de recrutement" definitionId="scripting-groovy-script" event="ON_ENTER" throwErrorEvent="true" definitionVersion="1.0.1">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_Tc5-ET_MEe28rJIX-e75Dg" definitionId="scripting-groovy-script" version="1.0.1" modelVersion="7.12.0-004">
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Tc5-Ej_MEe28rJIX-e75Dg" key="script">
-                <expression xmi:type="expression:Expression" xmi:id="_Tc5-Ez_MEe28rJIX-e75Dg" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
+          <connectors xmi:type="process:Connector" xmi:id="__5xb8ECXEe20qNWOTTbDaA" name="ScriptPython" definitionId="scripting-shell" event="ON_ENTER" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="__5xb8UCXEe20qNWOTTbDaA" definitionId="scripting-shell" version="1.0.0" modelVersion="7.12.0-004">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="__5xb8kCXEe20qNWOTTbDaA" key="interpreter">
+                <expression xmi:type="expression:Expression" xmi:id="__5xb80CXEe20qNWOTTbDaA" name="cmd" content="cmd" returnTypeFixed="true"/>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Tc5-FD_MEe28rJIX-e75Dg" key="variables"/>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Tc5-FT_MEe28rJIX-e75Dg" key="fakeScriptExpression">
-                <expression xmi:type="expression:Expression" xmi:id="_Tc5-Fj_MEe28rJIX-e75Dg" name="Test" content="File myFile = new File()&#xD;&#xA;myFile.write(&quot;test&quot;)&#xD;&#xA;println(&quot;test&quot;)&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="__5xb9ECXEe20qNWOTTbDaA" key="parameter">
+                <expression xmi:type="expression:Expression" xmi:id="__5xb9UCXEe20qNWOTTbDaA" name="/c" content="/c" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="__5xb9kCXEe20qNWOTTbDaA" key="script">
+                <expression xmi:type="expression:Expression" xmi:id="__5xb90CXEe20qNWOTTbDaA" name="&lt;pattern-expression>" content="python C:\Users\Luka\OneDrive - IMT MINES ALES\Documents\Documents\Cours\IMT Alès\S9\BPMN\Projet\PDF\testPDF.py ${recruteurFormulaireCandidat.nom} ${recruteurFormulaireCandidat.prenom} ${recruteurFormulaireCandidat}" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_a04XgECYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat.nom" content="recruteurFormulaireCandidat.nom" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_a04XgUCYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_a04XgkCYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
+                    </referencedElements>
+                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_a04Xg0CYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat.prenom" content="recruteurFormulaireCandidat.prenom" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_a04XhECYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_a04XhUCYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
+                    </referencedElements>
+                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_a04XhkCYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_a04Xh0CYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_a04XiECYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
+                    </referencedElements>
+                  </referencedElements>
+                </expression>
               </parameters>
             </configuration>
-            <outputs xmi:type="expression:Operation" xmi:id="_Tc5-Fz_MEe28rJIX-e75Dg">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_Tc5-GD_MEe28rJIX-e75Dg"/>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_Tc5-GT_MEe28rJIX-e75Dg" name="result" content="result" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Object">
-                <referencedElements xmi:type="definition:Output" xmi:id="_Tc5-Gj_MEe28rJIX-e75Dg" name="result" type="java.lang.Object"/>
+            <outputs xmi:type="expression:Operation" xmi:id="__5xb_kCXEe20qNWOTTbDaA">
+              <leftOperand xmi:type="expression:Expression" xmi:id="__5xb_0CXEe20qNWOTTbDaA"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="__5xcAECXEe20qNWOTTbDaA" name="result" content="result" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Object">
+                <referencedElements xmi:type="definition:Output" xmi:id="__5xcAUCXEe20qNWOTTbDaA" name="result" type="java.lang.Object"/>
               </rightOperand>
-              <operator xmi:type="expression:Operator" xmi:id="_Tc5-Gz_MEe28rJIX-e75Dg" type="ASSIGNMENT"/>
+              <operator xmi:type="expression:Operator" xmi:id="__5xcAkCXEe20qNWOTTbDaA" type="ASSIGNMENT"/>
+            </outputs>
+            <outputs xmi:type="expression:Operation" xmi:id="__5xcA0CXEe20qNWOTTbDaA">
+              <leftOperand xmi:type="expression:Expression" xmi:id="__5xcBECXEe20qNWOTTbDaA"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="__5xcBUCXEe20qNWOTTbDaA" name="exitStatus" content="exitStatus" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Object">
+                <referencedElements xmi:type="definition:Output" xmi:id="__5xcBkCXEe20qNWOTTbDaA" name="exitStatus" type="java.lang.Object"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="__5xcB0CXEe20qNWOTTbDaA" type="ASSIGNMENT"/>
             </outputs>
           </connectors>
           <operations xmi:type="expression:Operation" xmi:id="_dNSugD_WEe28rJIX-e75Dg">
