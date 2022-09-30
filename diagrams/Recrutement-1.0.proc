@@ -367,14 +367,14 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_CvwMIjTHEe2f0YxNpRV2hQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_CvwMITTHEe2f0YxNpRV2hQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_CvwMIzTHEe2f0YxNpRV2hQ" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_Tc5-ED_MEe28rJIX-e75Dg" name="Script Rapport de recrutement" definitionId="scripting-groovy-script" event="ON_ENTER" definitionVersion="1.0.1">
+          <connectors xmi:type="process:Connector" xmi:id="_Tc5-ED_MEe28rJIX-e75Dg" name="Script Rapport de recrutement" definitionId="scripting-groovy-script" event="ON_ENTER" throwErrorEvent="true" definitionVersion="1.0.1">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_Tc5-ET_MEe28rJIX-e75Dg" definitionId="scripting-groovy-script" version="1.0.1" modelVersion="7.12.0-004">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Tc5-Ej_MEe28rJIX-e75Dg" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_Tc5-Ez_MEe28rJIX-e75Dg" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Tc5-FD_MEe28rJIX-e75Dg" key="variables"/>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Tc5-FT_MEe28rJIX-e75Dg" key="fakeScriptExpression">
-                <expression xmi:type="expression:Expression" xmi:id="_Tc5-Fj_MEe28rJIX-e75Dg" name="Test" content="File myFile = new File()&#xD;&#xA;//myFile.write(&quot;test&quot;)&#xD;&#xA;println(&quot;test&quot;)&#xD;&#xA;a" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_Tc5-Fj_MEe28rJIX-e75Dg" name="Test" content="File myFile = new File()&#xD;&#xA;myFile.write(&quot;test&quot;)&#xD;&#xA;println(&quot;test&quot;)&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true"/>
               </parameters>
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_Tc5-Fz_MEe28rJIX-e75Dg">
@@ -385,6 +385,11 @@
               <operator xmi:type="expression:Operator" xmi:id="_Tc5-Gz_MEe28rJIX-e75Dg" type="ASSIGNMENT"/>
             </outputs>
           </connectors>
+          <operations xmi:type="expression:Operation" xmi:id="_dNSugD_WEe28rJIX-e75Dg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_dNSugT_WEe28rJIX-e75Dg" content=""/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_dNSugj_WEe28rJIX-e75Dg" content=""/>
+            <operator xmi:type="expression:Operator" xmi:id="_dNSugz_WEe28rJIX-e75Dg" type="ASSIGNMENT"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_CvwMJDTHEe2f0YxNpRV2hQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_CvwMJTTHEe2f0YxNpRV2hQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_CvwMJjTHEe2f0YxNpRV2hQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -894,7 +899,7 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_dRQRvjTDEe2f0YxNpRV2hQ" type="5005"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dRQRvTTDEe2f0YxNpRV2hQ" x="86" y="156" width="165" height="82"/>
             </children>
-            <children xmi:type="notation:Shape" xmi:id="_CvwMKTTHEe2f0YxNpRV2hQ" type="3027" element="_CvwMIDTHEe2f0YxNpRV2hQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
+            <children xmi:type="notation:Shape" xmi:id="_CvwMKTTHEe2f0YxNpRV2hQ" type="3027" element="_CvwMIDTHEe2f0YxNpRV2hQ" fontName="Segoe UI Black" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_CvwMKzTHEe2f0YxNpRV2hQ" type="5017"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CvwMKjTHEe2f0YxNpRV2hQ" x="770" y="159" width="162" height="81"/>
             </children>
