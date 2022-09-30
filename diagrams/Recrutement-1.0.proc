@@ -376,20 +376,20 @@
                 <expression xmi:type="expression:Expression" xmi:id="__5xb9UCXEe20qNWOTTbDaA" name="/c" content="/c" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="__5xb9kCXEe20qNWOTTbDaA" key="script">
-                <expression xmi:type="expression:Expression" xmi:id="__5xb90CXEe20qNWOTTbDaA" name="&lt;pattern-expression>" content="python C:\Users\Luka\OneDrive - IMT MINES ALES\Documents\Documents\Cours\IMT Alès\S9\BPMN\Projet\PDF\testPDF.py ${recruteurFormulaireCandidat.nom} ${recruteurFormulaireCandidat.prenom} ${recruteurFormulaireCandidat}" type="TYPE_PATTERN" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_a04XgECYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat.nom" content="recruteurFormulaireCandidat.nom" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_a04XgUCYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_a04XgkCYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
+                <expression xmi:type="expression:Expression" xmi:id="__5xb90CXEe20qNWOTTbDaA" name="&lt;pattern-expression>" content="python C:\Users\Luka\OneDrive - IMT MINES ALES\Documents\Documents\Cours\IMT Alès\S9\BPMN\Projet\PDF\testPDF.py ${recruteurFormulaireCandidat.nom} ${recruteurFormulaireCandidat.prenom} ${recruteurFormulaireCandidat.mail}" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_vczEcECdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat.nom" content="recruteurFormulaireCandidat.nom" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_vczEcUCdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vczEckCdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
                     </referencedElements>
                   </referencedElements>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_a04Xg0CYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat.prenom" content="recruteurFormulaireCandidat.prenom" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_a04XhECYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_a04XhUCYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_vczEc0CdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat.prenom" content="recruteurFormulaireCandidat.prenom" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_vczEdECdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vczEdUCdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
                     </referencedElements>
                   </referencedElements>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_a04XhkCYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_a04Xh0CYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_a04XiECYEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_vczrgECdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat.mail" content="recruteurFormulaireCandidat.mail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_vczrgUCdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" content="recruteurFormulaireCandidat" type="TYPE_VARIABLE" returnType="com.company.model.FormulaireCandidat">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vczrgkCdEe20qNWOTTbDaA" name="recruteurFormulaireCandidat" dataType="_3h4dvTRaEe2ghJZNv8_mMg" className="com.company.model.FormulaireCandidat"/>
                     </referencedElements>
                   </referencedElements>
                 </expression>
